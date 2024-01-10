@@ -28,6 +28,9 @@ end
 target 'LiveObjectDetection' do
   config = use_native_modules!
 
+  pod 'GoogleMLKit/ObjectDetection', '4.0.0'
+  pod 'GoogleMLKit/TextRecognition', '4.0.0'
+
   use_react_native!(
     :path => config[:reactNativePath],
     # Enables Flipper.
