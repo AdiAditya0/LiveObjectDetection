@@ -72,6 +72,12 @@ PODS:
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMLKit/ImageLabeling (4.0.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitImageLabeling (~> 3.0.0)
+  - GoogleMLKit/ImageLabelingCustom (4.0.0):
+    - GoogleMLKit/MLKitCore
+    - MLKitImageLabelingCustom (~> 3.0.0)
   - GoogleMLKit/MLKitCore (4.0.0):
     - MLKitCommon (~> 9.0.0)
   - GoogleMLKit/ObjectDetection (4.0.0):
@@ -114,9 +120,19 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 7.0)
     - GoogleUtilitiesComponents (~> 1.0)
     - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - MLKitImageLabeling (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitImageLabelingCommon (~> 5.0)
+    - MLKitVision (~> 5.0)
+    - MLKitVisionKit (~> 6.0)
   - MLKitImageLabelingCommon (5.0.0):
     - MLKitCommon (~> 9.0)
     - MLKitVision (~> 5.0)
+  - MLKitImageLabelingCustom (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitImageLabelingCommon (~> 5.0)
+    - MLKitVision (~> 5.0)
+    - MLKitVisionKit (~> 6.0)
   - MLKitObjectDetection (3.0.0):
     - MLKitCommon (~> 9.0)
     - MLKitObjectDetectionCommon (~> 5.0)
@@ -1217,6 +1233,8 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.201.0)
   - FlipperKit/SKIOSNetworkPlugin (= 0.201.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - GoogleMLKit/ImageLabeling (= 4.0.0)
+  - GoogleMLKit/ImageLabelingCustom (= 4.0.0)
   - GoogleMLKit/ObjectDetection (= 4.0.0)
   - GoogleMLKit/TextRecognition (= 4.0.0)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
@@ -1289,7 +1307,9 @@ SPEC REPOS:
     - libevent
     - MLImage
     - MLKitCommon
+    - MLKitImageLabeling
     - MLKitImageLabelingCommon
+    - MLKitImageLabelingCustom
     - MLKitObjectDetection
     - MLKitObjectDetectionCommon
     - MLKitTextRecognition
@@ -1426,7 +1446,9 @@ SPEC CHECKSUMS:
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   MLImage: 7bb7c4264164ade9bf64f679b40fb29c8f33ee9b
   MLKitCommon: c1b791c3e667091918d91bda4bba69a91011e390
+  MLKitImageLabeling: 9fcdbbfbc454f22009c10015c403ac6319385cdf
   MLKitImageLabelingCommon: 79ffbc10bd0c3a6407aa423aeb076f76a8883e15
+  MLKitImageLabelingCustom: 0e771d063bb920cd4aa751469d23b722a9ef0056
   MLKitObjectDetection: 065c494fb18d01b3580eaa29f0df3854bee8b5cf
   MLKitObjectDetectionCommon: 424e43365d7ef7dd7005a4799e5303eeb4287fec
   MLKitTextRecognition: 9ff0c843f2723d31d4bdd0c0d17a0a18382ed23e
@@ -1480,6 +1502,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 2b33a7ac96c58cdaa7b810948fc6a2a76ed2d108
 
-PODFILE CHECKSUM: 6763f55000810581660a170de8f37d7e275fbe9d
+PODFILE CHECKSUM: 2230e682acf2434bc31f804db5f6e0269d73093c
 
 COCOAPODS: 1.12.1

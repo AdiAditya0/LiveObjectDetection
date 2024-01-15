@@ -30,6 +30,8 @@ target 'LiveObjectDetection' do
 
   pod 'GoogleMLKit/ObjectDetection', '4.0.0'
   pod 'GoogleMLKit/TextRecognition', '4.0.0'
+  pod 'GoogleMLKit/ImageLabeling', '4.0.0'
+  pod 'GoogleMLKit/ImageLabelingCustom', '4.0.0'
 
   use_react_native!(
     :path => config[:reactNativePath],
